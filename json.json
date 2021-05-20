@@ -1,0 +1,148 @@
+{
+    "tests":     [
+      {
+        "parameters": [
+          28,
+          6,
+          2020
+        ],
+        "result": "vinte e oito de junho de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          24,
+          2,
+          2020
+        ],
+        "result": "vinte e quatro de fevereiro de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          18,
+          8,
+          2020
+        ],
+        "result": "dezoito de agosto de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          29,
+          3,
+          2020
+        ],
+        "result": "vinte e nove de março de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          15,
+          3,
+          2021
+        ],
+        "result": "quinze de março de dois mil e vinte e um",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          5,
+          5,
+          2021
+        ],
+        "result": "cinco de maio de dois mil e vinte e um",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          26,
+          7,
+          2021
+        ],
+        "result": "vinte e seis de julho de dois mil e vinte e um",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          3,
+          1,
+          2021
+        ],
+        "result": "três de janeiro de dois mil e vinte e um",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          20,
+          8,
+          2020
+        ],
+        "result": "vinte de agosto de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          10,
+          6,
+          2021
+        ],
+        "result": "dez de junho de dois mil e vinte e um",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          14,
+          9,
+          2020
+        ],
+        "result": "catorze de setembro de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          28,
+          11,
+          2020
+        ],
+        "result": "vinte e oito de novembro de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          17,
+          10,
+          2020
+        ],
+        "result": "dezassete de outubro de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          11,
+          9,
+          2020
+        ],
+        "result": "onze de setembro de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          17,
+          6,
+          2020
+        ],
+        "result": "dezassete de junho de dois mil e vinte",
+        "timeout": 1000
+      },
+      {
+        "parameters": [
+          26,
+          10,
+          2020
+        ],
+        "result": "vinte e seis de outubro de dois mil e vinte",
+        "timeout": 1000
+      }
+    ]
+  }
