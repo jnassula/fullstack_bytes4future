@@ -1,12 +1,35 @@
-function diaDoAno(data){
-    // escreve aqui a função
-    const daysBi = [0, 31, 60, 91, 121, 152, 183, 213, 244, 274, 305, 335];
-    const days = [0, 30, 59, 90, 120, 151, 182, 212, 243, 273, 304, 334];
-    if(data.getFullYear() % 4 === 0){
-        return (daysBi[data.getMonth()] + data.getDate())
+function countGroups(matrix) {
+    const groups = [ [], [] ]
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix.length; j++) {
+            const element = matrix[i][j];
+            const possibleGroups = groups[element]
+                    .filter(g => belongsToGroup(g, [i, j]))
+            const group = (possibleGroups?.flat() ?? [])
+            groups[element] = groups[element]
+                .filter(g => !possibleGroups.includes(g))
+                .concat([group.concat([[i, j]])])
+        }
     }
-    return (days[data.getMonth()] + data.getDate())
-} 
+    return groups.map(g => g.length)
+}
+function belongsToGroup(group, pos) {
+    return group
+        .some(p => (p[0] === pos[0] - 1 && p[1] === pos[1]) 
+                || (p[0] === pos[0] && p[1] === pos[1] - 1))
+}
 
 
-console.log(diaDoAno(new Date()))
+console.log(countGroups([
+    [1, 1, 0, 1],
+    [1, 1, 0, 0],
+    [0, 0, 1, 0],
+    [1, 0, 0, 1]
+]))
+
+console.log(countGroups([
+    [0, 0, 1, 1],         
+    [0, 0, 1, 0],         
+    [1, 0, 0, 1],         
+    [1, 1, 1, 0]
+]))
