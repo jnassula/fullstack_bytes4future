@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gerador de Nomes</h1>
+    <p id="name">Clique em Gerar</p>
+    <button onclick="nameGenerate()">Gerar</button>
+
+    <script>
+        function nameGenerate(){
+            const names = [
+                "Gonçalo",
+                "Jonata",
+                "Afonso", 
+                "Thiago",
+                "Daniel",
+                "André"
+            ]
+
+            const adj = [
+                "Brincalhão",
+                "Pingaiada",
+                "Baladeiro",
+                "Pagodeiro",
+                "Rockeiro",
+                "Cheio de fome" 
+            ]
+
+            const paragrafo = document.getElementById("name")
+            const generate = `${names[Math.floor(Math.random() * names.length)]} ${adj[Math.floor(Math.random() * adj.length)]}`
+            paragrafo.innerHTML = generate
+
+            
+        }
+    </script>
+</body>
+</html>

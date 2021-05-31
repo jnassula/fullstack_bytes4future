@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de números</title>
+</head>
+<body>
+    <h1>Gerador de Números</h1>
+    <p id="value">Clique em Gerar</p>
+    <button id="button_generate" onclick="getRandom()">Gerar</button>
+    
+
+    <script>
+        function getRandom(){
+            const paragrafo = document.getElementById("value")
+            const gerar = Math.floor(Math.random() * 1000000) + 1
+            paragrafo.innerHTML = gerar;   
+        }
+    </script>
+</body>
+</html>

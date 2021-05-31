@@ -1,0 +1,44 @@
+body{
+    background-color: rgba(202, 201, 199, 0.308);
+    margin: 5px;
+    
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    /* text-align: center; */
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#button_incrementa{
+    background-color: rgb(84, 235, 84);
+    color: white;
+    border-radius: 20px;
+}
+
+#button_decrementa{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+}
